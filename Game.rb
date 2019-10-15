@@ -23,6 +23,7 @@ class Game
       if (q.number1 + q.number2) == userInputNumber
         puts "#{@current_player.name}: Yes! You are correct"
         puts "#{@player_1.name}: #{@player_1.lives}/3 vs #{@player_2.name}: #{@player_2.lives}/3"
+        puts "-----NEW TURN-----"
         change_player
       else
         @current_player.change_lives
